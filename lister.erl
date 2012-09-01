@@ -33,9 +33,6 @@ flatten([]) ->
 flatten([[N]]) ->
   N;
 
-%%flatten([H|[HT|T]]) when is_integer(HT) ->
-%%  HT;
-
 flatten(N) when is_integer(N)->
   [N];
 
@@ -46,6 +43,4 @@ flatten([H|[HT|T]]) ->
 flatten(V) ->
   V.
 
-%%flatten([H|T]) when is_list(H) ->
-%%  H;
 
